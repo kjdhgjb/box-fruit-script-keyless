@@ -1,9 +1,9 @@
-local Rayfield = require(game.ReplicatedStorage.Rayfield) 
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Aadityalala hub",
-   LoadingTitle = "LALA hub",
-   LoadingSubtitle = "by my fingers man",
+   Name = "Aaditya lala hub",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by my hand man ",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -31,39 +31,22 @@ local MainSection = MainTab:CreateSection("Blox Fruits")
 
 Rayfield:Notify({
    Title = "You executed the script!",
-   Content = "Thanks for using my fingers man's Aadityalala hub",
+   Content = "Thanks for using RetributionMK8's Blox Fruits Script",
    Duration = 5,
    Image = nil,
    Actions = { -- Notification Buttons
       Ignore = {
          Name = "Okay!",
          Callback = function()
-            print("The user tapped Okay!")
-         end
-      }
-   }
+         print("The user tapped Okay!")
+      end
+   },
+},
 })
 
 local Button = MainTab:CreateButton({
    Name = "Find Fruits",
    Callback = function()
-      -- Placeholder function replacing loadstring
-      local player = game.Players.LocalPlayer
-      print("Find Fruits button clicked by " .. player.Name)
-      -- Add custom logic here, e.g., teleporting to fruits or displaying a message
-      Rayfield:Notify({
-         Title = "Find Fruits",
-         Content = "This is a placeholder function for finding fruits in Blox Fruits.",
-         Duration = 5,
-         Image = nil,
-         Actions = {
-            Ignore = {
-               Name = "Okay!",
-               Callback = function()
-                  print("Placeholder notification closed")
-               end
-            }
-         }
-      })
-   end
+   loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/kjdhgjb/box-fruit-script-keyless/refs/heads/main/main.lua"))()"))()
+   end,
 })
